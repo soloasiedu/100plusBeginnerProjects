@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>BMI Calculator</title>
+        <link rel="stylesheet" href="bmiCalc.css">
+
+    </head>
+    <body>
+        <div id="bmiCal">
+                <h1>BMI Calculator</h1>
+                <p>Heigth in cm : <input id="height" type="number" min="30" max="400" step=".1" value="120" ></p>
+                <p>Weight in kG: <input id="weight" type="number" min="20" max="500" step="1" value="60" ></p>
+                <br>
+                <button class ="calculate" onclick="calBMI()">Calculate</button>
+                <h2 id="bmiValue"></h2>
+                <h2 id="bmiWeightGuide"></h2>
+                <p id="underweight"></p>
+                <p id="normalweight"></p>
+                <p id="overweight"></p>
+        </div>
+        
+
+
+
+        <script src = "bmiCalc.js"></script>
+    </body>    
+</html> 

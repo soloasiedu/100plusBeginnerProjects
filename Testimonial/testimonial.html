@@ -1,0 +1,126 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>BackgroundColor</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+            .max-height{
+ min-height: 100vh;
+ background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url('../img/questionBcg.jpeg')center/cover no-repeat fixed;
+}
+.title-heading{
+ color:#f15025;
+}
+.title-subheading{
+ color: white;
+}
+.customer-card{
+ background: transparent!important;
+ color:white;
+ border:0.05rem solid white;
+ padding-bottom: 1rem;
+ padding-left: 1rem;
+ padding-right: 1rem;
+ position: relative;
+}
+.img-card{
+ border-radius: 50%;
+ margin-bottom: 1rem;
+ margin-top: -3rem;
+}
+.star-icon{
+ color: #f15025;
+}
+.quote-icon{
+ font-size: 2rem;
+ color: #f15025;
+}
+.prevBtn,.nextBtn{
+ font-size: 1.5rem;
+ padding: 0.1rem;
+ color:#f15025;
+ border:0.1rem solid #f15025;
+ display: inline-block;
+ position: absolute;
+ padding: 0.4rem;
+ border-radius: 50%;
+ transition: all 1s ease-in-out;
+}
+.prevBtn:hover{
+background: #f15025;
+color: white;
+
+}
+.nextBtn:hover{
+background: #f15025;
+color: white;
+
+}
+.prevBtn{
+ top: 50%;
+ left: 0;
+ transform: translate(-120%,-50%);
+}
+.nextBtn{
+ top: 50%;
+ right: 0;
+ transform: translate(120%,-50%);
+} 
+        </style>
+    </head>
+    <body>
+            <div class="container-fluid">
+                    <div class="row max-height align-items-center">
+                     <!-- col -->
+                     <div class="col-10 mx-auto col-md-6">
+                      <div class="row">
+                       <div class="col text-center my-5">
+                        <h4 class="title-heading text-uppercase">client</h4>
+                        <h1 class="title-subheading text-uppercase">testimonials</h1>
+                       </div>
+                      </div>
+                  
+                      <div class="card my-5 text-center customer-card ">
+                       <img src="img/customer-0.jpg" width="150" id="customer-img" class="img-card mx-auto" alt="">
+                       <h4 id="customer-name" class="text-uppercase">customer name</h4>
+                       <div class="review-icons my-2">
+                        <span class="star-icon">
+                         <i class="fas fa-star"></i>
+                        </span>
+                        <span class="star-icon">
+                         <i class="fas fa-star"></i>
+                        </span>
+                        <span class="star-icon">
+                         <i class="fas fa-star"></i>
+                        </span>
+                        <span class="star-icon">
+                         <i class="fas fa-star"></i>
+                        </span>
+                        <span class="star-icon">
+                         <i class="fas fa-star-half"></i>
+                        </span>
+                       </div>
+                       <p id="customer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sit voluptatum illo? Quae fugiat
+                        aspernatur harum aperiam, quis eos officia.</p>
+                       <span class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                       </span>
+                       <a href="#" class="btn prevBtn"><i class="fas fa-chevron-left"></i></a>
+                       <a href="#" class="btn nextBtn"><i class="fas fa-chevron-right"></i></a>
+                      </div>
+                     </div>
+                     <!-- end of col -->
+                    </div>
+                   </div>
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src = ""></script>
+    </body>    
+</html> 

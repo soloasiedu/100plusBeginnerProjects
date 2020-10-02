@@ -1,0 +1,29 @@
+#wordCounter{
+    background-color: coral;
+    width: 500px;
+    height: 300px;
+    color: #000;
+    text-align: center;
+}
+#wordText{
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+}
+#wordLength{
+    background-color: lightgreen;
+    width: 50px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 220px;
+    display: none;
+}
+#calculateLength{
+    margin-top: 8s0px;
+    border-radius: 10px;
+    background-color: blue;
+    color: #fff;
+    padding: 14px;
+    border-style: none;
+
+}

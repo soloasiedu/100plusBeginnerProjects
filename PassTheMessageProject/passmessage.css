@@ -1,0 +1,38 @@
+body{
+    background: lightblue;
+}
+#passMessage{
+    width: 740px;
+    height: 300px;
+    margin-top: 200px;
+    margin-left: 300px;
+    background-color: #f5f0f0;
+}
+
+#title{
+    padding-top: 15px;
+    text-align: center;
+}
+#messageText{
+    width: 700px;
+    padding: 10px;
+    margin-left: 15px;
+}
+#submit{
+    margin-top: 20px;
+    padding: 15px;
+    margin-left: 300px;
+    width: 150px;
+    background-color: lightblue;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+}
+#lastMessage{
+    text-align: center;
+}
+#messageDiplayed{
+    text-align: center;
+    text-transform: uppercase;
+    color: lightblue;
+}

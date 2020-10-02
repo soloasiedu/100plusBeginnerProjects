@@ -1,0 +1,22 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Loan Calculator</title>
+        <link rel="stylesheet" href="loanCal.css">
+
+    </head>
+    <body>
+        <div id="loanCal">
+                <h1>Loan Calculator</h1>
+                <p>Loan amount: $<input id="amount" type="number" min="1" max="500000" onchange="computeAmount()"></p>
+                <p>Interest Rate: %<input id="interest_rate" type="number" min="0" max="100" step=".1" value="10" onchange="computeAmount()"></p>
+                <p>Months to pay: <input id="months" type="number" min="1" max="300" step="1" value="1" onchange="computeAmount()"></p>
+                <h2 id="payment"></h2>
+        </div>
+        
+
+
+
+        <script src = "loanCal.js"></script>
+    </body>    
+</html> 
