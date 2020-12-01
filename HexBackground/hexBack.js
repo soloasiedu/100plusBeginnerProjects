@@ -1,8 +1,8 @@
 const button = document.querySelector('button');
 const body = document.querySelector('body');
-const colors = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E'];
+const colors = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
 var y = document.getElementById('hexCode');
-body.style.backgroundColor = 'blue';
+body.style.backgroundColor = '#9AE6ED';
 
 button.addEventListener('click', changeBackgroundColor);
 
@@ -16,3 +16,5 @@ function changeBackgroundColor(){
     y.innerHTML = textColor;
     body.style.backgroundColor = textColor;
 }
+
+// setInterval(changeBackgroundColor, 50);
