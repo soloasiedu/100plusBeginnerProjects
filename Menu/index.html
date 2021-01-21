@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starter</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <section class="menu">
+      <div class="title">
+          <h2>Cars</h2>
+          <div class="underline"></div>
+      </div>
+      <div class="btn-container">
+        <button type="button" class="filter-btn" data-id="all">All</button>
+        <button type="button" class="filter-btn" data-id="bugatti">Bugattis</button>
+        <button type="button" class="filter-btn" data-id="ferrari">Ferraris</button>
+        <button type="button" class="filter-btn" data-id="lamborghini">Lamborghinis</button>
+        <input type="text" class="search" name="txt" placeholder="search" value="Search" />
+    </div>
+      <section class="section-center">
+          <!-- single item -->
+          <article class="car-item">
+            <img src="./images/aventador.jpg" class="photo" alt="menu item" />
+            <div class="item-info">
+              <header>
+                <h4>Lamborghini aventador</h4>
+                <h4 class="price">$15</h4>
+              </header>
+              <p class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.</p>
+            </div>
+          </article>
+          <!-- end of single item -->
+      </section>
+  </section>
+  <!-- javascript -->
+  <script src="app.js"></script>
+</body>
+
+</html>
