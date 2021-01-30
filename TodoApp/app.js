@@ -1,5 +1,6 @@
 // ****** SELECT ITEMS **********
 const alert = document.querySelector('.alert');
+const submitBtn = document.querySelector('.submit-btn');
 const container = document.querySelector('.grocery-container');
 const list = document.querySelector('.grocery-list');
 const grocery = document.getElementById("grocery");
@@ -38,6 +39,7 @@ function addItem(e){
         </div>`;
         list.appendChild(element);
         container.classList.add('show-container');
+        setBackToDefault();
     }
     else if(value && editFlag){}
     else{
@@ -53,6 +55,12 @@ function displayInfo(message, successOrDanger){
         alert.textContent = "";
         alert.classList.remove(`alert-${successOrDanger}`);
     },1000);
+}
+
+function setBackToDefault(){
+    editFlag = false;
+    editID = "";
+    submitBtn.textContent = 'submit';
 }
 // ****** LOCAL STORAGE **********
 
