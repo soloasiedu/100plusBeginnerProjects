@@ -8,13 +8,13 @@ const form = document.querySelector('.grocery-form');
 const clearBtn = document.querySelector('.clear-btn');
 
 // edit option
-let editItem;
+let editElement;
 editFlag = false;
 editID = "";
 
 // ****** EVENT LISTENERS **********
 form.addEventListener('submit', addItem);
-
+clearBtn.addEventListener('click', clearItems);
 
 // ****** FUNCTIONS **********
 function addItem(e){
@@ -37,11 +37,25 @@ function addItem(e){
             <i class="fas fa-trash"></i>
           </button>
         </div>`;
+        grocery.value = "";
+
+        const editBtn = element.querySelector('.edit-btn');
+        const deleteBtn = element.querySelector('.delete-btn');
+
+        deleteBtn.addEventListener('click', deleteItem);
+        editBtn.addEventListener('click', editItem);
+
         list.appendChild(element);
         container.classList.add('show-container');
+        displayInfo("Item added", 'success');
         setBackToDefault();
     }
-    else if(value && editFlag){}
+    else if(value && editFlag){
+        editElement.innerHTML = grocery.value;
+        grocery.value = '';
+        displayInfo('Item edited', 'success');
+        setBackToDefault();
+    }
     else{
         displayInfo("Please enter a value", "danger");
     }
@@ -62,6 +76,38 @@ function setBackToDefault(){
     editID = "";
     submitBtn.textContent = 'submit';
 }
+
+function clearItems(){
+    const items = document.querySelectorAll('.grocery-item');
+    items.forEach(function(item){
+        list.removeChild(item);
+    })
+    container.classList.remove('show-container');
+    displayInfo("Items cleared", "success");
+    setBackToDefault();
+}
+
+function deleteItem(e){
+    const element = e.currentTarget.parentElement.parentElement;
+    const id = element.dataset.id;
+    list.removeChild(element);
+    if(list.children.length === 0){
+        container.classList.remove('show-container');
+    }
+    displayInfo("Item deleted", "danger");
+    setBackToDefault();
+}
+
+function editItem(e){
+    const element = e.currentTarget.parentElement.parentElement
+    editElement = e.currentTarget.parentElement.previousElementSibling;
+    editFlag = true;
+    editID = element.dataset.id;
+    grocery.value = editElement.innerHTML;
+    submitBtn.textContent = 'edit';
+    
+}
+
 // ****** LOCAL STORAGE **********
 
 // ****** SETUP ITEMS **********
