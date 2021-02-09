@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 50px auto;
+    border: 1px solid green;
+
+}
+/* .calculator form{
+    border: 1px solid red;
+} */
+.calculator form input{
+    width: 100%;
+}
+.calculator .buttons{
+    /* border: 1px solid yellow; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.btn{
+    width: 23%;
+}
