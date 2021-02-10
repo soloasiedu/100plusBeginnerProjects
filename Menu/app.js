@@ -116,7 +116,7 @@ function displayCarItems(carMenuItems){
     sectionCenter.innerHTML = carMenu;
 }
 
-searchField.addEventListener("change", function(e){
+searchField.addEventListener("input", function(e){
     console.log(e.currentTarget.value);
     let searchedItems = cars.filter(function(carItem){
         if(carItem.title.toUpperCase().includes(e.currentTarget.value.toUpperCase())){
